@@ -1,0 +1,26 @@
+input{
+    padding: 10px 0 0 0;
+}
+
+p.descricaoApp{
+    font-size: 14px;
+}
+
+h1.titulo{
+    font-size: 50px;
+}
+
+form > div{
+    padding: 0 0 10px 0;
+}
+
+.ct-chart {
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    padding: 8px;
+}
+
+.ct-label {
+    font-size: 12px;
+}

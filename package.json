@@ -1,0 +1,17 @@
+{
+  "name": "nomes",
+  "version": "1.0.0",
+  "description": "Consumindo uma api de nomes",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "Gustavo Melo",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "bootstrap3": "^3.3.5",
+    "chartist": "^0.11.4"
+  },
+  "devDependencies": {}
+}

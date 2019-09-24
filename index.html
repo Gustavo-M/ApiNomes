@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/chartist/dist/chartist.min.js"></script>
+    <link rel="stylesheet" href="node_modules/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <script src="js/controllers/nomeController.js"></script>
+    <title>Buscar Nomes</title>
+</head>
+<body>
+    <div class="container">
+		<div ng-controller="nomeController" class="col-md-12 text-left jumbotron">
+			<h1 class="text-left titulo">Buscar nomes</h1>
+            <p class="descricaoApp">Digite um nome e confira a frequência utilizada no Brasil no período de 1930 a 2010</p>
+			<form class="navbar-form" role="search">
+		    <div class="input-group add-on">
+		      <input class="form-control" ng-model="nomePessoa" placeholder="Digite um nome aqui" name="srch-term" id="srch-term" type="text">
+		      <div class="input-group-btn">
+		        <button class="btn btn-primary" type="submit" ng-click="buscarNome(nomePessoa);"><i class="glyphicon glyphicon-search"></i></button>
+		      </div>
+		    </div>
+          </form>
+          <div class="alert alert-danger" ng-show="message.length">
+            {{message}}
+          </div>
+			
+			<div class="panel panel-success" ng-show="mostrarGrafico()">
+			  <div class="ct-chart"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
