@@ -4,7 +4,8 @@
   "description": "Consumindo uma api de nomes",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "start": "node server.js"
   },
   "author": "Gustavo Melo",
   "license": "ISC",
